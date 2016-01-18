@@ -1,7 +1,0 @@
-FROM centos6
-MAINTAINER Phil Griffiths phil@redhat.com
-LABEL Description="Test install of Mono on CentOS and runs a sample hello-world app"
-RUN yum -y install epel-release
-RUN yum -y install mono-opt mono-xsp-opt mod_mono-opt mono-basic-opt mono-nant-opt nuget-opt monodevelop-opt nunit-opt
-RUN . /opt/mono/env.sh
-RUN mono --version
