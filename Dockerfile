@@ -5,6 +5,8 @@ RUN yum -y install git
 RUN git clone https://github.com/mono/mono.git
 RUN yum -y install make autoconf libtool which gcc-c++ gettext && yum -y clean all
 RUN cd mono && ./autogen.sh && make get-monolite-latest && make && make install
-COPY hello.cs /
-RUN /usr/local/bin/mcs hello.cs
-RUN /usr/local/bin/mono hello.exe
+#COPY hello.cs /
+#RUN /usr/local/bin/mcs hello.cs
+#RUN /usr/local/bin/mono hello.exe
+COPY hello.aspx /
+RUN cd / && xsp4 --port 9000
