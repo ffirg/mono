@@ -7,4 +7,5 @@ RUN yum -y install mono-opt mono-xsp-opt mod_mono-opt mono-basic-opt mono-nant-o
 COPY hello.aspx /
 WORKDIR /
 EXPOSE 9000
-RUN /opt/mono/bin/xsp4 --port 9000 && sleep 999
+#RUN /opt/mono/bin/xsp4 --port 9000 && sleep 999
+ENTRYPOINT ["/opt/mono/bin/xsp4", "--port 9000", "&"]
