@@ -5,5 +5,6 @@ RUN cd /etc/yum.repos.d && yum -y install epel-release wget && wget https://copr
 RUN yum -y install mono-opt mono-xsp-opt mod_mono-opt mono-basic-opt mono-nant-opt nuget-opt monodevelop-opt nunit-opt
 #RUN . /opt/mono/env.sh && /opt/mono/bin/mono --version
 COPY hello.aspx /
-RUN cd / && /opt/mono/bin/xsp4 --port 9000 &
+WORKDIR /
 EXPOSE 9000
+RUN /opt/mono/bin/xsp4 --port 9000 && sleep 999
