@@ -6,3 +6,4 @@ RUN yum -y install mono-opt mono-xsp-opt mod_mono-opt mono-basic-opt mono-nant-o
 #RUN . /opt/mono/env.sh && /opt/mono/bin/mono --version
 COPY hello.aspx /
 RUN cd / && /opt/mono/bin/xsp4 --port 9000 &
+EXPOSE 9000
