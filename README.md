@@ -5,10 +5,10 @@ Simple Mono/ASP.NET Docker build to be used for Red Hat Openshift Enterprise tes
 
 *** REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS ***
 
-# Login as a 'normal' everyday user
+- Login as a 'normal' everyday user
 $ oc login -u "user-name"
 
-# Create a new project
+- Create a new project
 $ oc new-project "project-name"
 
 # Create the app from git source code (it'll detect the Dockefile and do the build/deploys)
