@@ -1,7 +1,7 @@
 # mono
 Simple Mono/ASP.NET Docker build to be used for Red Hat Openshift Enterprise testing...
 
-# How To Build Inside OSE v3
+## How To Build Inside OSE v3
 
 *** REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS ***
 
