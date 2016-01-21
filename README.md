@@ -3,7 +3,7 @@ Simple Mono/ASP.NET Docker build to be used for Red Hat Openshift Enterprise tes
 
 #### How To Build Inside OSE v3
 
-*** REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS ***
+*** REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS
 
 Login as a 'normal' everyday user
 ```
@@ -15,7 +15,7 @@ Create a new project
 $ oc new-project "project-name"
 ```
 
-Create the app from git source code (it'll detect the Dockefile and do the build/deploys)
+Create the app from git source code (it'll detect the Dockerfile and do the build/deploys)
 ```
 $ oc new-app https://github.com/ffirg/mono.git
 ```
