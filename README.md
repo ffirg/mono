@@ -3,7 +3,7 @@ Simple Mono/ASP.NET Docker build to be used for Red Hat Openshift Enterprise tes
 
 #### How To Build Inside OSE v3
 
-*** REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS
+* REPLACE EVERYTHING IN QUOTES "" WITH YOUR OWN DETAILS *
 
 Login as a 'normal' everyday user
 ```
